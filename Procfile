@@ -1,0 +1,1 @@
+web: bundle exec nodejs start -p $PORT
