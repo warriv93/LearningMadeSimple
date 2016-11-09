@@ -139,9 +139,9 @@ app.get('/forgotPassword/', function (req, res) {
 app.get('*', function (req, res) {
   res.sendFile('index.html', {root: './www'});
 });
-
-// Start up
-var port = 3000;
-app.listen(port, function(){
-  console.log("Express server listening on port " + port);
-});
+//
+//// Start up
+//var port = 3000;
+//app.listen(port, function(){
+//  console.log("Express server listening on port " + port);
+//});
