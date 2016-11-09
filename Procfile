@@ -1,1 +1,1 @@
-web: npm start -p $PORT
+web: node app.js

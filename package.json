@@ -1,6 +1,10 @@
 {
   "name": "mongr",
+  "description": "a really cool app",
   "version": "0.0.1",
+  "engines": {
+    "node": "6.9.1"
+  },
   "dependencies": {
     "angular-messages": "^1.5.5",
     "angular-sanitize": "^1.5.3",
@@ -21,6 +25,7 @@
     "sha1": "*",
     "slack-node": "^0.2.0"
   },
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   }
