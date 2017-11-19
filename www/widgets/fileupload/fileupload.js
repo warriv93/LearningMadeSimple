@@ -11,7 +11,7 @@ app.directive('fileuploadFileupload', [
       templateUrl: settings.widgets + 'fileupload/fileupload.html',
       link: function(scope, element, attrs) {
 
-          
+
         scope.fileChanged = function() {
             //update GUI to show file
             $(".uploads").empty();
@@ -21,7 +21,7 @@ app.directive('fileuploadFileupload', [
               }
             }
         }
-                  
+
         scope.submit = function(){ //function to call on form submit
 
             if (scope.file) { //check if file is valid
@@ -36,7 +36,7 @@ app.directive('fileuploadFileupload', [
         upload = function (file) {
     //      console.log("file", file);
             Upload.upload({
-                url: 'http://localhost:3000/upload', //webAPI exposed to upload the file
+                url: 'https://learningmadesimple.herokuapp.com/upload', //webAPI exposed to upload the file
                 data:{file:file} //pass file as data, should be user ng-model
             }).then(function (resp) { //upload function returns a promise
                 if(resp.data.error_code === 0){ //validate success

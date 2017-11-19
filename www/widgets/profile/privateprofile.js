@@ -566,7 +566,7 @@ app.directive('profilePrivateprofile', [
             showUploadDivOnHover()
       		var strippedFileName = file.name.replace(/[\n\t\r\x20]/g, "_");
 	        Upload.upload({
-	            url: 'http://localhost:3000/upload', //webAPI exposed to upload the file
+	            url: 'https://learningmadesimple.herokuapp.com/upload', //webAPI exposed to upload the file
 	            data:{
 	               	file: file
 	            } //pass file as data, should be user ng-model

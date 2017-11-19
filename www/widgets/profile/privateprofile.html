@@ -4,7 +4,7 @@
 
         <div class="row heightfull table-row newtable-row">
             <div class="col-sm-3 col-md-3 col-lg-3 heightfull profile__container">
-                
+
                 <div class="profile__about">
                     <h1> {{ first_name }} {{ last_name }} </h1>
                     <h2> {{ role }} </h2>
@@ -68,7 +68,7 @@
                     <button class="btn" ng-hide="descriptionEnabled" ng-click="cancelDescription()">Cancel</button>
                     <button class="btn" ng-hide="descriptionEnabled" ng-click="saveDescription()">Save</button>
                 </div><!---.profile__description-->
-               
+
 
             </div>
 
@@ -146,7 +146,7 @@
 
                         </div><!--Empty div to get spacing-->
         <div class="profile__stuff__skills">
-                            <h1><i class="fa fa-cogs"></i>Skills</h1>  
+                            <h1><i class="fa fa-cogs"></i>Skills</h1>
 
                             <h2 class="uppercase">Add skills</h2>
                             <input id="skills" ng-model="searchTag" required="true">
@@ -169,7 +169,7 @@
                     <!--</div> <!-- .col -->
 
                          <div ng-show="authButton" id="slack_auth">
-                    <a href="https://slack.com/oauth/authorize?client_id=19435876323.23240924768&scope=team%3Aread+users%3Aread+channels%3Awrite+channels%3Ahistory+channels%3Aread+groups%3Awrite+chat%3Awrite%3Auser&redirect_uri=http://localhost:3000/myprofile/&team=T0KCTRS9H"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/Add_to_slack@2x.png 2x" /></a>
+                    <a href="https://slack.com/oauth/authorize?client_id=19435876323.23240924768&scope=team%3Aread+users%3Aread+channels%3Awrite+channels%3Ahistory+channels%3Aread+groups%3Awrite+chat%3Awrite%3Auser&redirect_uri=https://learningmadesimple.herokuapp.com/myprofile/&team=T0KCTRS9H"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/Add_to_slack@2x.png 2x" /></a>
                 </div>
 
 
