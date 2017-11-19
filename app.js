@@ -34,10 +34,10 @@ app.use(m.expresssession({
 
 //FILE UPLOAD REQUIREMENTS
 app.use(function(req, res, next) {
-        res.header("Access-Control-Allow-Origin", "http://localhost");
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-        next();
-    });
+  res.header("Access-Control-Allow-Origin", "https://learningmadesimple.herokuapp.com/");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 // Initialize our own REST api - mongresto
 var customRoutes = [

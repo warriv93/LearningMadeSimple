@@ -32,7 +32,7 @@ app.directive('profilePrivateprofile', [
 	    		//the following means the user will be connected to lmsproject.slack.com
 	    		var slackTeam = "lmsproject"
 	    		//url contains a special temporary code needed for aquaring user token
-	    		var url = "https://slack.com/api/oauth.access?client_id=19435876323.23240924768&client_secret=e6a4a2f97a72b6a1e889830b6ba7612b&code=" + code + "&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fmyprofile%2F&pretty=1&team=" + slackTeam;
+	    		var url = "https://slack.com/api/oauth.access?client_id=19435876323.23240924768&client_secret=e6a4a2f97a72b6a1e889830b6ba7612b&code=" + code + "&redirect_uri=https%3A%2F%2Flearningmadesimple.herokuapp.com%2Fmyprofile%2F&pretty=1&team=" + slackTeam;
 
 	    		//uses temp code to get access token
 	    		$http.get(url).then(function(response) {
